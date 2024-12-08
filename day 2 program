@@ -1,0 +1,174 @@
+1.	Write a C Program to find the largest of three numbers using nested if statements.
+  #include <stdio.h>
+
+int main() {
+    int num1, num2, num3;
+    printf("Enter three numbers: ");
+    scanf("%d %d %d", &num1, &num2, &num3);
+
+    if (num1 >= num2) {
+        if (num1 >= num3) {
+            printf("%d is the largest number.\n", num1);
+        } else {
+            printf("%d is the largest number.\n", num3);
+        }
+    } else {
+        if (num2 >= num3) {
+            printf("%d is the largest number.\n", num2);
+        } else {
+            printf("%d is the largest number.\n", num3);
+        }
+    }
+
+    return 0;
+}
+2.	Write a C Program to check if a year is a leap year or not using conditional statements.
+  #include<stdio.h>
+int main()
+{
+    int a;
+    printf("enter the three numbers:");
+    scanf("%d",&a);
+     if(a==366)
+     {
+       printf("it is a leap year");
+     }
+     else
+     {
+         printf("the year is not a leap year");
+     }
+     return 0;
+}
+3.	Write a C Program to check whether a character is a digit, alphabet, or special character using nested if.
+4.	Write a C Program to calculate the grade of a student based on marks using conditional statements (if-else if).
+  #include <stdio.h>
+
+int main() 
+{
+    int sub1,sub2,sub3,sub4,total;
+    float avg;
+    printf("Enter marks of the subjects (out of 100): ");
+    scanf("%d%d%d%d", &sub1,&sub2,&sub3,&sub4);
+    total=sub1+sub2+sub3+sub4;
+    avg=total/4;
+    printf("%f",avg);
+    if(avg<100)
+    {if (sub1>35,sub2>35,sub3>35,sub4>35){
+    if(avg>90) 
+    {
+        printf("Grade:A");
+    } 
+    else if(avg>80)
+    {
+        printf("Grade:B");
+    }
+    else if(avg>70)
+    {
+        printf("Grade:C");
+    }
+    else if(avg>60)
+    {
+        printf("Grade:D");
+    }
+    else if(avg>50)
+    {
+        printf("Grade:E");
+    }
+    else if(avg>30)
+    {
+        printf("passs better luck next time");
+    }
+    else
+    {
+        printf("Fail");
+    }
+    }
+    }
+return 0;
+}
+5.	Write a C Program to check whether the given three sides of a triangle form a valid right-angled triangle using conditional statements.
+  #include <stdio.h>
+#include <math.h>
+
+int main() {
+    int opp, adj, hyp;
+    float phyth;
+    printf("Enter the length of the adjacent side: ");
+    scanf("%d", &adj);
+    printf("Enter the length of the opposite side: ");
+    scanf("%d", &opp);
+    printf("Enter the length of the hypotenuse: ");
+    scanf("%d", &hyp);
+
+  
+    phyth = sqrt((adj * adj) + (opp * opp));
+
+
+    if (hyp == (int)phyth) {
+        printf("The triangle is a right triangle.\n");
+    } else {
+        printf("The triangle is not a right triangle.\n");
+    }
+
+    return 0;
+}
+  6.	Write a C Program to determine the smallest of four numbers using nested if statements.
+    #include <stdio.h>
+int main()
+{
+int n1,n2,n3,n4; 
+printf("enter the numbers"); 
+scanf("%d%d%d%d",&n1,&n2,&n3,&n4);
+if(n1<n2 && n1<n3 && n1<n4)
+	{
+		printf("%d is the smallest number.",n1);
+	}
+	else if(n2<n3 && n2<n4)
+	{
+		printf("%d is the smallest number.",n2);
+	}
+	else if(n3<n4)
+	{
+		printf("%d is the smallest number.",n3);
+	}	
+	else
+	{
+	  printf("%d is the smallest number.",n4);
+	}
+	return 0;
+}
+7.	Write a C Program to calculate the electricity bill based on units consumed: 
+o	First 100 units: Rs. 5 per unit
+o	Next 200 units: Rs. 7 per unit
+o	Above 300 units: Rs. 10 per unit
+o	Add a fixed charge of Rs. 50 and a 10% tax on the total bi
+10.	Write a C Program to check if an inputted number is divisible by both 4 and 6, either one of them, or neither using nested if.
+  #include <stdio.h>
+
+int main() {
+    int number;
+    printf("Enter an integer: ");
+    scanf("%d", &number);
+
+    if (number % 4 == 0) {
+        if (number % 6 == 0) {
+            printf("%d is divisible by both 4 and 6.\n", number);
+        } else {
+            printf("%d is divisible by 4 but not by 6.\n", number);
+        }
+    } else {
+        if (number % 6 == 0) {
+            printf("%d is divisible by 6 but not by 4.\n", number);
+        } else {
+            printf("%d is not divisible by either 4 or 6.\n", number);
+        }
+    }
+
+    return 0;
+}
+    
+    
+    
+
+  
+  
